@@ -25,7 +25,7 @@ class AddData extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Add Data Baru"),
+          title: Text("Create Data Nasabah"),
         ),
         body: Form(
             key: _formKey,
