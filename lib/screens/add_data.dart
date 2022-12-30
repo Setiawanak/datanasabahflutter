@@ -12,10 +12,10 @@ class AddData extends StatelessWidget {
 
   Future saveData() async {
     final response =
-        await http.post(Uri.parse("http://192.168.1.2:8000/api/data"), body: {
+        await http.post(Uri.parse("http://localhost:8000/api/data"), body: {
       "name": _nameController.text,
-      'noRek': _noRekController.toString(),
-      'noKTP': _noKTPController.toString(),
+      'noRek': _noRekController.text,
+      'noKTP': _noKTPController.text,
     });
     print(response.body);
     return json.decode(response.body);

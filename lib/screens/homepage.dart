@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final String url = 'http://192.168.1.2:8000/api/data';
+  final String url = 'http://localhost:8000/api/data';
 
   Future getData() async {
     var response = await http.get(Uri.parse(url));
